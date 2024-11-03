@@ -1,0 +1,32 @@
+<html>  
+<head>  
+    <script type="text/javascript" src="test_app.js"></script>  
+    <link rel="stylesheet" href="./test_styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body onload=page_start() id = "bodyid"> 
+    
+    
+    <div id = "section2" class = "section_wrapper">
+        
+        <div class = "section_text">
+
+            <div id="method_radio">
+                <input type="radio" name="method_cat" value="Method category" checked="checked">
+                <label for="Method Categories">Divide by Method Categories</label>
+                <input type="radio" name="method_cat" value="Method">
+                <label for="Method Sub-Categories">Divide by Method Sub-Categories</label>
+            </div>
+            <div id="record_radio">
+                <input type="radio" name="records" value="Records" checked="checked">
+                <label for="Records">Measure by Records Compromised</label>
+                <input type="radio" name="records" value="num_breaches">
+                <label for="Num Data Breaches">Measure by Number of Data Breaches</label>
+            </div>
+            <br>
+            <div id = "plot2"></div>
+
+        </div>
+    </div>
+</body>  
+</html>  

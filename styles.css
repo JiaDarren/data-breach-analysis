@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+body {
+    background-color: rgb(205, 205, 205);
+}
+
+p,h2, h4,text {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.section_text {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 50px 25px 5px 50px; /* top right bottom left */
+}
+
+.section_wrapper {
+    overflow: hidden; /* add this to contain floated children */
+}
+
+#section1 {
+    background-color: rgb(198, 198, 198);
+}
+#section4 {
+    background-color: rgb(198, 198, 198);
+}
+#section5 {
+    background-color: rgb(198, 198, 198);
+}
+
+#section1_text {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 50px 25px 5px 50px; /* top right bottom left */
+    float: left;
+    width: 30%;
+}
+
+#page_title {
+    font-size: 45px;
+}
+
+#plot1 {
+    float: right;
+    margin: 100px 50px 5px 50px; /* top right bottom left */
+}
+
+#plot1 .yAxis, .xAxis {
+    color: rgb(76, 76, 76);
+}
+
+.title {
+    font-size: 18px;
+}
+
+#plot2 {
+    float: left;
+    margin: 50px 10px 5px 50px; /* top right bottom left */
+}
+
+#section2_text {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 50px 50px 5px 0px; /* top right bottom left */
+    float: left;
+    text-align: end;
+    width: 20%;
+}
+
+
+#plot3 {
+    float: left;
+    margin: 10px 10px 5px 50px; /* top right bottom left */
+}
+
+.legend {
+    background-color: rgb(198, 198, 198);
+}
+
+#plot4 {
+    float: left;
+    margin: 10px 10px 5px 50px; /* top right bottom left */
+}
+
+#section4_text {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 50px 50px 5px 0px; /* top right bottom left */
+    float: left;
+    text-align: end;
+    width: 17%;
+}
+
+#plot5 {
+    float: right;
+    margin: 10px 50px 5px 10px; /* top right bottom left */
+}
+
+#section5_text {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 80px 10px 5px 50px; /* top right bottom left */
+    float: left;
+    text-align: left;
+    width: 20%;
+}
+
+#footer {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: small;
+    color: rgb(129, 129, 129);
+}
+
+.writeup {
+    margin: 0px 50px 0px 50px; /* top right bottom left */
+}

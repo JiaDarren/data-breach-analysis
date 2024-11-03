@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+body {
+    background-color: rgb(205, 205, 205);
+}
+
+text {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.section_text {
+    font-family: 'Rajdhani', sans-serif;
+    margin: 50px 25px 5px 50px; /* top right bottom left */
+}
+
+.section_wrapper {
+    overflow: hidden; /* add this to contain floated children */
+}
+
+
+#plot2 {
+    float: left;
+    margin: 50px 10px 5px 50px;/*  top right bottom left */
+}
+
+#section2_text {
+    font-family: 'Rajdhani', sans-serif;
+    /* margin: 50px 50px 5px 0px; top right bottom left */
+    float: left;
+    text-align: end;
+    width: 20%;
+}
+

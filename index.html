@@ -1,0 +1,196 @@
+<html>  
+<head>  
+    <script type="text/javascript" src="app.js"></script>  
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body onload=page_start() id = "bodyid"> 
+    
+    
+    <div id = "section1" class = "section_wrapper">
+        <div id = 'section1_text' class = "section_text">
+            <h2 id = "page_title">The Escalating Danger <br>of Data Breaches</h2>
+            <p>
+                Every day, more than 750,000 records are lost to data breaches 
+                and hacking attempts, and the danger that they pose only continues 
+                to grow as time goes on. In visualizing the magnitude in which 
+                data breaches have compromised our data, we can visualize just 
+                how much of an effect they can have on our day-today life.
+            <p></p> 
+                Here we ask ourselves, how much data has truly been compromised in the 
+                past 2 decades? Who are the primary targets of data breaches? What are 
+                the causes/methods employed in data breaches? 
+                
+            </p>
+        </div>
+        <div id = "plot1"></div>
+    </div>
+        
+    <div id = "section2" class = "section_wrapper">
+        <div id = "plot2"></div>
+        <div id = 'section2_text' class = "section_text">
+            <p>
+                When looking at notable data breaches in the past two decades, we can see 
+                that web-based entities are overwhelmingly the target, both in terms of 
+                the number of records stolen/compromised and the number of data breaches.
+                Moreover, we can see that the cause for a majority of the records being
+                compromised were from external hacking attempts.
+            </p><p>
+                For more information on the method sub-category or for switching from looking
+                at the number of records compromised to the number of data breaches, feel free
+                to click the buttons below!
+            </p>
+            <div id="method_radio">
+                <input type="radio" name="method_cat" value="Method category" checked="checked">
+                <label for="Method Categories">Divide by Method Categories</label><br/>
+                <input type="radio" name="method_cat" value="Method">
+                <label for="Method Sub-Categories">Divide by Method Sub-Categories</label>
+            </div>
+            <p></p>
+            <div id="record_radio">
+                <input type="radio" name="records" value="Records" checked="checked">
+                <label for="Records">Measure by Records Compromised</label><br/>
+                <input type="radio" name="records" value="num_breaches">
+                <label for="Num Data Breaches">Measure by Number of Data Breaches</label>
+            </div>
+            <br>
+            <p>
+                When looking at the specific enities that had their data compromised, it turns 
+                out that Yahoo is the most insecure, losing the greatest number of records due 
+                to two extremely significant hacking-based data breaches.
+            </p>
+        </div>
+    </div>
+
+    <div id = "section3" class = "section_wrapper">
+        <div id = "plot3"></div>
+    </div>
+    
+    
+    <div id = "section4" class = "section_wrapper">
+        <div id = "plot4"></div>
+        <div id = 'section4_text' class = "section_text">
+            <p>
+                When looking on previous data breaches, we can see how the causes and methods used 
+                have changed throughout the years. Two trends to note are that data breaches that 
+                were caused by insider agents or stolen property have become significantly less
+                popular (or at the very least significantly less successful). This is signified by 
+                the downwards trend in the rogue contractor/employee super-category. The other trend to
+                note is that poor security has increasingly become the method by which data is being
+                compromised.
+            </p>
+            <p>
+                The significance that poor security plays into causing data breaches is only reinforced
+                when looking at the methods and causes of data breaches as a whole.
+            </p>
+        </div>
+    </div>
+
+    <div id = "section5" class = "section_wrapper">
+        <div id = 'section5_text' class = "section_text">
+            <p>
+                While we still don't know the cause / methods used for a large portion of known notable
+                data breaches, many of the data breaches that we do know are caused by poor security. 
+                Hacking and activity by malicious agents are always still relevant, but a significant
+                percentage of data breaches couldn't have happened without poor security practices.
+            </p>
+            <p>
+                Improving security practices and keeping up to date in the ways that malicious agents
+                can gain access to data records can be a powerful preventative measure. By being aware 
+                of the danger that data breaches can cause and what methods are used to cause them,
+                we can be better prepared to prevent them from occuring in the future and protect our
+                privacy.
+            </p>
+        </div>
+        <div id = "plot5"></div>
+    </div>
+
+    <p id = "footer">
+        Data used in this visualization was the Comprehensive Data Breaches Dataset from 
+        2016 to 2020. It can be found at 
+        <a href="https://www.kaggle.com/datasets/thedevastator/data-breaches-a-comprehensive-list">
+            https://www.kaggle.com/datasets/thedevastator/data-breaches-a-comprehensive-list
+        </a>.
+    </p>
+    <h2>Project Writeup:</h2>
+    <div class = "writeup">
+        <h4>Plot 1: "More Data than Ever has been Compromised by Data Breaches"</h4>
+        <p>
+            Choice of Color Scheme: Red was chosen for the scatter points for its contrast with the page background color 
+            as well as keeping in line with the theme of escalating danger. The point of this visualization was to demonstrate 
+            how the magnitude of data breaches was rising, so the color was chosen to subtly support and match that theme.
+            <br/>
+            <br/>
+            Marks and Channels: This visualization has 0 keys and 2 values. The mark is points, while the channel is the horizontal
+            and vertical position of the points.
+        </p>
+    </div>
+    <div class = "writeup">
+        <h4>Plot 2: "Web Organizations are the Most Targeted Type of Organization"</h4>
+        <p>
+            Choice of Color Scheme: The method super-categories were divided into red, orange, blue, brown, black, and gray. The idea
+            was that each super-category would have a color that would make some amount of sense given what the super-caetgory was 
+            (or at least wouldn't clash with the supercategory) while still being visually distinct from one another. The method categories
+            were all variants of the same color as the super-category so that it would be somewhat clear from looking at the plot that
+            some methods would be more related than others.
+            <br/>
+            <br/>
+            Marks and Channels: This visualization has 2 keys and 1 value. The mark is lines, while the channel is the horizontal
+            and vertical position, and color of the points. (You could argue that length could also be a channel by considering the
+            bar to be a thick line, and the length to indicate how large the value is).
+            <br/>
+            <br/>
+            Other Design Considerations: The axis were chosen to be horizontal to help with the composition of the visualization. Having
+            the data being sorted means that the longest bar is at the bottom while the shortest bar is at the top. This places points of 
+            interest along the different corners of the screen and guides the audience to look at the visualization in an almost circular 
+            manner, prolonging interest and overall making the visualization better to look at.
+        </p>
+    </div>
+    <div class = "writeup">
+        <h4>Plot 3: "Yahoo is the Most Insecure Entity"</h4>
+        <p>
+            Choice of Color Scheme: Like the scatterplot, red was mostly chosen to keep a consistent color theming and to emphasis the
+            fact that Yahoo had the most compromised data out of all the other entities in the dataset. The gray used for the other
+            columns keep in theme with the grays used throughout the visualization.
+            <br/>
+            <br/>
+            Marks and Channels: This visualization has 1 key and 1 value. The mark is lines, while the channel is vertical position. 
+            (You could argue that length could also be a channel by considering the bar to be a thick line, and the length to 
+            indicate how large the value is). Though color plays a role in drawing interest, it doesn't technically code any information
+            not already convey though the other channels, and so is not a channel.
+        </p>
+    </div>
+    <div class = "writeup">
+        <h4>Plot 4: "Poor Security Recently Plays Bigger Role in the Cause of Data Breaches"</h4>
+        <p>
+            Choice of Color Scheme: Variants of Red and black were chosen because they greatly contrasted both themselves and the 
+            gray background. Red was chosen for the two forms of malicous actors/actions (rogue contractor/employee and stolen/lost)
+            to match with our cultural association of red, while black was chosen for poor security to contrast red and create a clear
+            silhouette. The variables "hacked", "accidentally exposed", and "unknown" were marked with different variations of gray 
+            since they weren't essential to the message that this visualization was trying to convey.
+            <br/>
+            <br/>
+            Marks and Channels: This visualization was the geometric visualization. The mark is areas, while the channel is also areas.
+            This is because the amount of space each variable takes up is directly proportional to the value that the visualization was 
+            trying to display.
+        </p>
+    </div>
+    <div class = "writeup">
+        <h4>Plot 5: "Most Data Breaches are caused by Poor Security"</h4>
+        <p>
+            Choice of Color Scheme: Lke the bar graph, red was mostly chosen in this plot to maximize contrast and bring attention to 
+            how large the variable "poor security" was compared to other varaibles while still keeping a consistent color theme. The other
+            variables were coded as gray to emphasize the difference in magnitude between them and "poor security".
+            <br/>
+            <br/>
+            Marks and Channels: This visualization was the boxplot visualization. The marks are lines and area, since lines denote how large
+            the median and quartile values were, as well as the values of any outliers. Area is also a mark, since the larger the area, the 
+            greater the variation of data there is. The channels are vertical position (or arguably length, for the reasons described above)
+            and area.
+        </p>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+</body>  
+</html>  
